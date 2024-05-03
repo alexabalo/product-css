@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.container{
+    width: 90%;
+    margin: 1em auto;
+    background-color:  hsl(30, 38%, 92%);
+}
+
+.container img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.info{
+    width: 90%;
+    margin: 1em 1em auto;
+}
+
+h5{
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    margin: 1em 0;
+    color: hsl(0, 0%, 20%);
+}
+
+.info h1{
+    font-family: "Fraunces", serif;
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+p{
+    margin-bottom: 1em;
+    color: hsl(0, 0%, 20%);
+}
+
+.price{
+    display: flex;
+}
+
+h2{
+    font-family: "Fraunces", serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 2em;
+}
+
+h6{
+    text-decoration: line-through;
+    margin: auto;
+    font-size: 1em;
+}
+
+button{
+
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    padding: 1em;
+    border-radius: 10px;
+    margin-top: 1em;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+button:hover{
+    background-color: hsl(158, 57%, 61%);
+    color: #000;  
+}
+
+i{
+    margin-right: 1em;
+}
+
+.attribution{
+    margin: 1em 0;
+    font-size: 10px;
+    text-align: center;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: #000;
+
+}
+
+@media (min-width: 768px){
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .container{
+        width: 40%;
+        display: flex;
+        border-radius: 0 10px  10px 0px;
+       
+    }
+
+    .container img{
+        background-image: url(./images/image-product-desktop.jpg);
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+
+   
+}
+
+@media (min-width: 1440px){
+    .container{
+        width: 30%;
+    }
+}
+
